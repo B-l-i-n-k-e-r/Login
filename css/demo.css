@@ -1,0 +1,78 @@
+/* Font import */
+@font-face {
+	font-family: 'BebasNeueRegular';
+	src: url('fonts/BebasNeue-webfont.eot');
+	src: url('fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/BebasNeue-webfont.woff') format('woff'),
+		 url('fonts/BebasNeue-webfont.ttf') format('truetype'),
+		 url('fonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+  }
+  
+  /* Basic Reset */
+  * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  
+  /* Base styles */
+  html, body {
+	height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+  }
+  
+  /* Utility */
+  .clr {
+	clear: both;
+  }
+  
+  /* Links */
+  a {
+	color: #333;
+	text-decoration: none;
+  }
+  
+  /* Layout */
+  .container {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	position: relative;
+  }
+  
+  /* Header */
+  .container > header {
+	padding: 20px 30px 10px;
+	margin: 0 20px 10px;
+	text-align: center;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+  }
+  
+  .container > header h1 {
+	font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+	font-size: 35px;
+	font-weight: 400;
+	color: rgba(26, 89, 120, 0.9);
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+	padding-bottom: 5px;
+  }
+  
+  .container > header h1 span {
+	color: #7cbcd6;
+	text-shadow: 0 1px 1px rgba(255,255,255,0.8);
+  }
+  
+  .container > header h2 {
+	font-size: 16px;
+	font-style: italic;
+	color: #2d6277;
+	text-shadow: 0 1px 1px rgba(255,255,255,0.8);
+  }
+  
