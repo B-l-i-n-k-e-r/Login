@@ -19,13 +19,12 @@
   
   /* Base styles */
   html, body {
-	height: 100%;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: Arial, sans-serif;
-    background: #f4f4f4;
+    background: #114d5e;
   }
   
   /* Utility */
@@ -33,29 +32,13 @@
 	clear: both;
   }
   
-  /* Links */
-  a {
-	color: #333;
-	text-decoration: none;
-  }
-  
   /* Layout */
   .container {
-	width: 100%;
-	height: 100%;
-	text-align: center;
+	text-align: top;
 	position: relative;
   }
   
-  /* Header */
-  .container > header {
-	padding: 20px 30px 10px;
-	margin: 0 20px 10px;
-	text-align: center;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
-  }
-  
-  .container > header h1 {
+  .container > h1 {
 	font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
 	font-size: 35px;
 	font-weight: 400;
