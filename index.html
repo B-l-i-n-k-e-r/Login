@@ -1,64 +1,37 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-    <head>
-        <title>Login Form</title>
-        <link rel="shortcut icon" href="../favicon.ico"> 
-        <link rel="stylesheet" type="text/css" href="css/demo.css" />
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
-    </head>
-    <body>
-            <section>				
-                <div id="container_demo" >
-                    <a class="hiddenanchor" id="toregister"></a>
-                    <a class="hiddenanchor" id="tologin"></a>
-                    <div id="wrapper">
-                        <div id="login" class="animate form">
-                            <form id="loginForm" action="dashboard.html" method="GET"> 
-                                <h1>Login</h1> 
-                                <p> 
-                                    <label for="username" class="uname" data-icon="u"> Username </label>
-                                    <input id="username" name="username" required="required" type="text" placeholder="Enter your username" />
-                                </p>
-                                <p> 
-                                    <label for="password" class="youpasswd" data-icon="p"> Password </label>
-                                    <input id="password" name="password" required="required" type="password" placeholder="Enter your password" />
-                                </p>
-                                <p class="keeplogin"> 
-                                    <input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" /> 
-                                    <label for="loginkeeping">Remember Me</label>
-                                </p>
-                                <p class="login button"> 
-                                    <input type="submit" value="Login" />
-                                </p>
-                                <p class="change_link">
-                                    First Time?
-                                    <a href="#toregister" class="to_register">Register</a>
-                                </p>
-                            </form>
-                            
-                            <script>
-                                document.getElementById('loginForm').addEventListener('submit', function(e) {
-                                    var username = document.getElementById('username').value;
-                                    var password = document.getElementById('password').value;
-                            
-                                    if (username !== 'Huruma' || password !== 'Huruma1234') {
-                                        e.preventDefault(); 
-                                        alert('Incorrect username or password. Please try again.');
-                                    }
-                                });
-                            </script>
-                        
-                            <script>
-                                document.getElementById('loginForm').addEventListener('submit', function(e) {
-                                    var username = document.getElementById('username').value;
-                                    var password = document.getElementById('password').value;
-                                    if (username !== 'Huruma' || password !== 'Huruma1234') {
-                                        e.preventDefault();
-                                        alert('Incorrect username or password. Please try again.');
-                                    }
-                                });
-                            </script>
-                </div>  
-            </section>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover-Reveal Login Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="box">
+        <div class="login-container-inner">
+            <div class="login-header">
+                <i class="fas fa-volume-up"></i>
+                <h2>LOGIN</h2>
+                <i class="fas fa-heart"></i>
+            </div>
+            <div class="login-form-and-footer">
+                <form class="login-form">
+                    <div class="input-group">
+                        <input type="text" id="username" name="username" placeholder="Username">
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="password" name="password" placeholder="Password">
+                    </div>
+                    <button type="submit" class="sign-in-button">Sign in</button>
+                </form>
+                <div class="login-footer">
+                    <a href="#" class="forgot-password">Forgot Password</a>
+                    <a href="#" class="sign-up">Sign up</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
